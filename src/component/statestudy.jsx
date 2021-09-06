@@ -3,8 +3,8 @@ import { useState } from 'react';
 import Modal from './modal';
 export const Statestudy = () => {
 
-    const [제목, set제목] = useState(['첫번째 배열', '두번째 배열']);
-    const [state, setstate] = useState(['첫번째 배열', '두번째 배열']);
+    const [제목, set제목] = useState(['첫번째 제목 배열', '두번째 제목 배열']);
+    const [state, setstate] = useState(['첫번째 내용 배열', '두번째 내용 배열']);
     const [버튼, set버튼] = useState(false);
     let date = new Date();
     let 오늘날짜 = date.toLocaleDateString();
@@ -23,22 +23,17 @@ export const Statestudy = () => {
     }
         return (
             <div className="state">
-                <div>
-                             
-                    <p className="글제목" onClick={모달창}>{제목[0]}</p>
-                    <p className="날짜">{오늘날짜}</p>
-                    <p className="내용">{state[0]}</p>
-                </div><hr />
-
-                <div>
-                    <p className="글제목">{제목[1]}</p>
-                    <p className="날짜">{오늘날짜}</p>
-                    <p className="내용">{state}</p>
-                </div><hr />
+                {버튼 === true ? < Modal /> : null }
                 {
-                    버튼 === true
-                        ? < Modal />
-                        : null
+                    제목.map(function(a){
+                        return (<div>
+                    <p className="글제목" onClick={모달창}> {a} </p>
+                    <p className="날짜">{오늘날짜}</p>
+                    <p className="내용">{state[0]}</p> 
+                    <hr />
+                </div>
+                )                
+                    })
                 }
 
             </div>
