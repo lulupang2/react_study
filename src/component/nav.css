@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'SBAggroB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.navigation {
+    font-family: 'SBAggroB';
+    background-color: #000;
+    display: flex;
+    padding: 3rem;
+    width: 100%;
+}
+.로고 span {
+    
+    color: #FFF;
+    font-size: 2rem;
+    text-shadow: .3rem .3rem red;
+}
+
+dl {
+    font-size: 1rem;
+    color: #FFF;
+}

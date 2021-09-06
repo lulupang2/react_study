@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'GowunBatang-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunBatang-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GowunDodum-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunDodum-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GowunDodum-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunDodum-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+.글제목 {
+    font-family: 'GowunBatang-Bold';
+    font-size: 1.5rem;
+}
+
+.내용 {
+    font-family: 'GowunDodum-Regular';
+
+}
+
+.모달 { 
+    text-align: center;
+    padding: 1rem;
+    font-family: 'GowunDodum-Regular';
+    background-color: #000;
+    color: #FFF;
+    font-size: 1.1rem;
+    font-weight: 1000;
+    width: 30%;
+}
+.모달_제목 {
+    font-size: 2rem;
+}
