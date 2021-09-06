@@ -2,12 +2,13 @@ import './state.css';
 import { useState } from 'react';
 import Modal from './modal';
 export const Statestudy = () => {
-
     const [제목, set제목] = useState(['첫번째 제목 배열', '두번째 제목 배열']);
     const [state, setstate] = useState(['첫번째 내용 배열', '두번째 내용 배열']);
     const [버튼, set버튼] = useState(false);
     let date = new Date();
     let 오늘날짜 = date.toLocaleDateString();
+
+
 
     function 제목변경() {
         var newArray = [...제목] //... 펼침 연산자(Spread Operator) 특정 개체 또는 배열의 값을 다른 객체,배열로 복제할때 사용
@@ -21,21 +22,22 @@ export const Statestudy = () => {
             set버튼(true);
         }
     }
-        return (
+//리턴
+        return ( 
             <div className="state">
                 {버튼 === true ? < Modal /> : null }
                 {
-                    제목.map(function(a){
-                        return (<div>
+                    제목.map(function (a) {                    
+                        return (
+                    <div>
                     <p className="글제목" onClick={모달창}> {a} </p>
                     <p className="날짜">{오늘날짜}</p>
-                    <p className="내용">{state[0]}</p> 
+                    <p className="내용">{state}</p> 
                     <hr />
-                </div>
-                )                
+                    </div> 
+                            );                        
                     })
                 }
-
-            </div>
-        );
+            </div >
+        )
     }
