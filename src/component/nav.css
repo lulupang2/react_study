@@ -19,8 +19,27 @@
     font-size: 2rem;
     text-shadow: .3rem .3rem red;
 }
-
+dd {
+    display: flex;
+    
+}
 dl {
+    margin-left: 1rem;
     font-size: 1rem;
     color: #FFF;
+}
+
+dl a {
+    text-decoration: none;
+    color: #FFF;
+    transition: .2s ease-out;
+}
+dl a:visited{
+    color: #FFF;
+    text-decoration: none;
+}
+dl a:hover {
+    color: #ECC;
+    font-size: 1.2rem;
+    border-bottom: .2rem solid red;
 }

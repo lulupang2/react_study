@@ -8,6 +8,9 @@ export const Menu = () => {
             <div className="로고"><span>NAV 메뉴바</span></div>
             <dd>
                 <dl><Link to="/state">STATE</Link></dl>
+                <dl><Link to="/input">INPUT</Link></dl>
+                <dl><Link to="/shoping">SHOPPINGMALL</Link></dl>
+
             </dd>
         </div>
     )
